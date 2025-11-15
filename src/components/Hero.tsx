@@ -73,14 +73,11 @@ const Hero = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="gap-2"
-                onClick={() => {
-                  const link = document.createElement('a');
-                  link.href = '/programs';
-                  link.click();
-                }}
+                asChild
               >
-                View Study Destinations →
+                <a href="/comparison">
+                  Compare Malaysia vs Canada →
+                </a>
               </Button>
             </div>
           </div>
