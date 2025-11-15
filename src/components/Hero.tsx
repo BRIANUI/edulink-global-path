@@ -41,24 +41,23 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Study in <span className="text-primary">Malaysia</span> or{" "}
-                <span className="text-primary">Canada</span>
+                Your Gateway to World-Class Education in <span className="text-primary">Canada</span> & <span className="text-primary">Malaysia</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground">
-                Fast, Affordable Admissions for African Students
+                Free, end-to-end study-abroad guidance for African students. 15+ years of experience, 1,000+ students placed, and a 99% visa success rate.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-5 w-5 text-success" />
-                  <span className="text-sm font-medium">Free Application Support</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-success" />
-                  <span className="text-sm font-medium">Expert Visa Guidance</span>
+                  <span className="text-sm font-medium">Free Expert Guidance</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-5 w-5 text-success" />
                   <span className="text-sm font-medium">99% Visa Success Rate</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-success" />
+                  <span className="text-sm font-medium">Career-Focused Placements</span>
                 </div>
               </div>
             </div>
@@ -69,16 +68,19 @@ const Hero = () => {
                 className="bg-accent hover:bg-accent/90 text-accent-foreground"
                 onClick={() => document.getElementById("inquiry-form")?.scrollIntoView({ behavior: "smooth" })}
               >
-                Book Free Consultation
+                Get a Free 3-Minute Review
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="gap-2"
-                onClick={() => window.open("https://wa.me/254123456789", "_blank")}
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/programs';
+                  link.click();
+                }}
               >
-                <MessageCircle className="h-5 w-5" />
-                Chat on WhatsApp
+                View Study Destinations →
               </Button>
             </div>
           </div>
@@ -86,8 +88,8 @@ const Hero = () => {
           {/* Right Form */}
           <div className="lg:ml-auto w-full max-w-md">
             <div className="bg-card border border-border rounded-2xl p-8 shadow-2xl">
-              <h3 className="text-2xl font-bold mb-2">Start Your Journey</h3>
-              <p className="text-muted-foreground mb-6">Get expert guidance in 3 simple steps</p>
+              <h3 className="text-2xl font-bold mb-2">Start Your Journey Today</h3>
+              <p className="text-muted-foreground mb-6">Request a free 3-minute review</p>
               
               <form onSubmit={handleSubmit} className="space-y-4" id="inquiry-form">
                 <div>
