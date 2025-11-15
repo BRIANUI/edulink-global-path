@@ -13,7 +13,7 @@ const Footer = () => {
               <span className="text-2xl font-bold">Link</span>
             </div>
             <p className="text-muted-foreground">
-              Your trusted partner for international education in Malaysia and Canada.
+              EduLink Worldwide — East Africa's trusted study-abroad consultancy. 15+ years of experience · Over 1,000 students placed · 99% visa success rate.
             </p>
             <div className="flex gap-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -60,47 +60,54 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Kenya Office */}
+          {/* Contact Info */}
           <div>
-            <h3 className="font-semibold mb-4">Kenya Office</h3>
+            <h3 className="font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start gap-2">
                 <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                <span>Nairobi, Kenya</span>
+                <span>Khrishna Centre, E4, 3rd Floor<br />Woodvale Grove, Westlands, Nairobi</span>
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                <span>+254 123 456 789</span>
+                <div className="flex flex-col gap-1">
+                  <span>+254 731 367 057</span>
+                  <span className="text-xs">Canada: +254 704 595 341</span>
+                  <span className="text-xs">Malaysia: +254 777 367 057 / +254 727 367 057</span>
+                </div>
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                <span>kenya@edulink.com</span>
+                <span>info@edulinkmy.com</span>
               </li>
             </ul>
           </div>
 
-          {/* Uganda Office */}
+          {/* Study Destinations */}
           <div>
-            <h3 className="font-semibold mb-4">Uganda Office</h3>
-            <ul className="space-y-3 text-muted-foreground">
-              <li className="flex items-start gap-2">
-                <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                <span>Kampala, Uganda</span>
+            <h3 className="font-semibold mb-4">Study Destinations</h3>
+            <ul className="space-y-2">
+              <li>
+                <NavLink to="/malaysia" className="text-muted-foreground hover:text-primary transition-colors">
+                  Study in Malaysia
+                </NavLink>
               </li>
-              <li className="flex items-start gap-2">
-                <Phone className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                <span>+256 123 456 789</span>
+              <li>
+                <NavLink to="/canada" className="text-muted-foreground hover:text-primary transition-colors">
+                  Study in Canada
+                </NavLink>
               </li>
-              <li className="flex items-start gap-2">
-                <Mail className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                <span>uganda@edulink.com</span>
+              <li>
+                <NavLink to="/faq" className="text-muted-foreground hover:text-primary transition-colors">
+                  FAQ
+                </NavLink>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} EduLink International Education Consultants. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} EduLink Worldwide. All rights reserved.</p>
         </div>
       </div>
     </footer>

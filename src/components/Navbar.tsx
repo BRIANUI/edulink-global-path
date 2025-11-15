@@ -58,23 +58,17 @@ const Navbar = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button
-              variant="outline"
-              size="sm"
-              className="gap-2"
-              onClick={() => window.open("tel:+254123456789")}
-            >
-              <Phone className="h-4 w-4" />
-              Call Us
-            </Button>
-            <Button
-              size="sm"
-              className="bg-accent hover:bg-accent/90"
-              onClick={() => window.open("https://wa.me/254123456789", "_blank")}
-            >
-              Book Consultation
-            </Button>
+          <div className="hidden md:flex items-center space-x-2">
+            <div className="flex flex-col items-end mr-2">
+              <Button
+                size="sm"
+                className="bg-accent hover:bg-accent/90"
+                onClick={() => window.open("https://wa.me/254731367057?text=Hi%20EduLink%2C%20I%27m%20interested%20in%20studying%20abroad.", "_blank")}
+              >
+                Get a Free 3-Minute Review
+              </Button>
+              <span className="text-xs text-muted-foreground mt-1">All services are 100% FREE — no hidden fees.</span>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -127,19 +121,15 @@ const Navbar = () => {
             </NavLink>
             <div className="pt-4 space-y-2">
               <Button
-                variant="outline"
-                className="w-full gap-2"
-                onClick={() => window.open("tel:+254123456789")}
-              >
-                <Phone className="h-4 w-4" />
-                Call Us
-              </Button>
-              <Button
                 className="w-full bg-accent hover:bg-accent/90"
-                onClick={() => window.open("https://wa.me/254123456789", "_blank")}
+                onClick={() => {
+                  window.open("https://wa.me/254731367057?text=Hi%20EduLink%2C%20I%27m%20interested%20in%20studying%20abroad.", "_blank");
+                  setIsOpen(false);
+                }}
               >
-                Book Consultation
+                Get a Free 3-Minute Review
               </Button>
+              <span className="text-xs text-muted-foreground text-center block">All services are 100% FREE — no hidden fees.</span>
             </div>
           </div>
         )}
