@@ -277,6 +277,88 @@ const Malaysia = () => {
                 </CardContent>
               </Card>
 
+              {/* Student Testimonials */}
+              <Card className="border-border bg-primary/5">
+                <CardContent className="pt-6">
+                  <h2 className="text-2xl font-bold mb-6 text-center">
+                    What Our Students Say
+                  </h2>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    {/* Sanah Kassam */}
+                    <Card className="border-border">
+                      <CardContent className="pt-6">
+                        <div className="flex items-start gap-3 mb-4">
+                          <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                            <span className="text-lg font-bold text-primary">SK</span>
+                          </div>
+                          <div>
+                            <h3 className="font-semibold">Sanah Kassam</h3>
+                            <p className="text-sm text-muted-foreground">EduLink Student at Taylor's University</p>
+                          </div>
+                        </div>
+                        <p className="text-muted-foreground italic">
+                          "Studying at Taylor's through EduLink has been an incredible experience. The campus facilities are world-class, and the international community makes you feel at home from day one."
+                        </p>
+                      </CardContent>
+                    </Card>
+
+                    {/* Ali */}
+                    <Card className="border-border">
+                      <CardContent className="pt-6">
+                        <div className="flex items-start gap-3 mb-4">
+                          <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                            <span className="text-lg font-bold text-primary">A</span>
+                          </div>
+                          <div>
+                            <h3 className="font-semibold">Ali</h3>
+                            <p className="text-sm text-muted-foreground">EduLink Student at Taylor's University</p>
+                          </div>
+                        </div>
+                        <p className="text-muted-foreground italic">
+                          "The quality of education in Malaysia is exceptional, and the cost is so much more affordable than Western countries. EduLink made the entire application process smooth and stress-free."
+                        </p>
+                      </CardContent>
+                    </Card>
+
+                    {/* Generic Nottingham Student */}
+                    <Card className="border-border">
+                      <CardContent className="pt-6">
+                        <div className="flex items-start gap-3 mb-4">
+                          <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                            <span className="text-lg font-bold text-primary">M</span>
+                          </div>
+                          <div>
+                            <h3 className="font-semibold">Maria Chen</h3>
+                            <p className="text-sm text-muted-foreground">Business Student, Nottingham Malaysia</p>
+                          </div>
+                        </div>
+                        <p className="text-muted-foreground italic">
+                          "Getting a UK degree while studying in Malaysia has been the best decision. The campus life is amazing, and I'm building connections with students from all over the world."
+                        </p>
+                      </CardContent>
+                    </Card>
+
+                    {/* EduLink Services */}
+                    <Card className="border-border">
+                      <CardContent className="pt-6">
+                        <div className="flex items-start gap-3 mb-4">
+                          <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                            <span className="text-lg font-bold text-primary">JM</span>
+                          </div>
+                          <div>
+                            <h3 className="font-semibold">John Mwangi</h3>
+                            <p className="text-sm text-muted-foreground">Engineering Student, INTI University</p>
+                          </div>
+                        </div>
+                        <p className="text-muted-foreground italic">
+                          "The engineering facilities here rival those in Western universities. Thanks to EduLink, I'm getting top-tier education at a fraction of the cost my friends are paying abroad."
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CardContent>
+              </Card>
+
               {/* CTA */}
               <div className="text-center pt-8">
                 <Button
