@@ -2,7 +2,15 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { GraduationCap, DollarSign, Briefcase, Globe, BookOpen, MapPin } from "lucide-react";
+import { GraduationCap, DollarSign, Briefcase, Globe, BookOpen, MapPin, Users } from "lucide-react";
+import campusEvening from "@/assets/canada/campus-evening.webp";
+import studentsWalking from "@/assets/canada/students-walking.webp";
+import schoolSpirit from "@/assets/canada/school-spirit.webp";
+import residence from "@/assets/canada/residence.webp";
+import studentsCollaborating from "@/assets/canada/students-collaborating.webp";
+import campusFall from "@/assets/canada/campus-fall.webp";
+import coopStudents from "@/assets/canada/coop-students.webp";
+import campusPlaza from "@/assets/canada/campus-plaza.webp";
 
 const Canada = () => {
   return (
@@ -11,15 +19,24 @@ const Canada = () => {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/10 via-background to-background py-20">
+        <section className="relative bg-gradient-to-br from-primary/10 via-background to-background py-20">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Study in Canada — Global Opportunities & Work Experience
-              </h1>
-              <p className="text-xl text-muted-foreground">
-                Top-ranked universities, multicultural campuses, Co-op programs, and PGWP up to 3 years.
-              </p>
+            <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                  Study in Canada — Global Opportunities & Work Experience
+                </h1>
+                <p className="text-xl text-muted-foreground mb-6">
+                  Top-ranked universities, multicultural campuses, Co-op programs, and PGWP up to 3 years.
+                </p>
+              </div>
+              <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
+                <img 
+                  src={campusEvening} 
+                  alt="Canadian university campus at sunset with diverse international students" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -77,6 +94,147 @@ const Canada = () => {
                       <li>• Hospitality Management</li>
                       <li>• Many more disciplines</li>
                     </ul>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Multicultural Learning Environment */}
+              <Card className="border-border bg-accent/5">
+                <CardContent className="pt-6">
+                  <div className="grid md:grid-cols-2 gap-6 items-center">
+                    <div className="aspect-video rounded-lg overflow-hidden">
+                      <img 
+                        src={studentsCollaborating} 
+                        alt="Diverse international students collaborating on academic projects at Canadian university" 
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <div>
+                      <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <Users className="h-6 w-6 text-accent" />
+                        Multicultural Learning Community
+                      </h2>
+                      <p className="text-muted-foreground mb-4">
+                        Study alongside students from over 200 countries in one of the world's most diverse and inclusive education systems.
+                      </p>
+                      <div className="space-y-2 text-sm text-muted-foreground">
+                        <p>✓ Over 640,000 international students choose Canada</p>
+                        <p>✓ English or French language programs available</p>
+                        <p>✓ Safe, welcoming, and multicultural society</p>
+                        <p>✓ Support services for international students</p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Co-op Programs & Career Opportunities */}
+              <Card className="border-border bg-primary/5">
+                <CardContent className="pt-6">
+                  <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                    <Briefcase className="h-6 w-6 text-primary" />
+                    Co-op Programs & Career Success
+                  </h2>
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                      <p className="text-muted-foreground mb-4">
+                        Canadian universities are renowned for their Co-op programs, allowing students to gain valuable work experience while studying. Many programs integrate paid work terms, helping students build professional networks and earn income.
+                      </p>
+                      <div className="space-y-3">
+                        <div className="flex items-start gap-2">
+                          <div className="w-2 h-2 rounded-full bg-primary mt-2" />
+                          <div>
+                            <h4 className="font-semibold">Paid Work Experience</h4>
+                            <p className="text-sm text-muted-foreground">Alternate study terms with paid work placements</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <div className="w-2 h-2 rounded-full bg-primary mt-2" />
+                          <div>
+                            <h4 className="font-semibold">Professional Networks</h4>
+                            <p className="text-sm text-muted-foreground">Build connections with industry leaders</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <div className="w-2 h-2 rounded-full bg-primary mt-2" />
+                          <div>
+                            <h4 className="font-semibold">Career Ready</h4>
+                            <p className="text-sm text-muted-foreground">Graduate with real-world experience on your resume</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="aspect-square rounded-lg overflow-hidden">
+                      <img 
+                        src={coopStudents} 
+                        alt="Canadian co-op program students in professional business attire" 
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Campus Life & Facilities */}
+              <Card className="border-border">
+                <CardContent className="pt-6">
+                  <h2 className="text-2xl font-bold mb-6 text-center">
+                    Experience Canadian Campus Life
+                  </h2>
+                  <div className="grid md:grid-cols-3 gap-6">
+                    <div className="space-y-3">
+                      <div className="aspect-square rounded-lg overflow-hidden">
+                        <img 
+                          src={campusFall} 
+                          alt="Beautiful Canadian university campus during fall season with autumn colors" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <h3 className="font-semibold text-center">Stunning Campus Environments</h3>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="aspect-square rounded-lg overflow-hidden">
+                        <img 
+                          src={schoolSpirit} 
+                          alt="Enthusiastic Canadian university students showing school spirit at campus events" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <h3 className="font-semibold text-center">Vibrant Student Community</h3>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="aspect-square rounded-lg overflow-hidden">
+                        <img 
+                          src={campusPlaza} 
+                          alt="Modern Canadian university campus plaza with study areas and student facilities" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <h3 className="font-semibold text-center">Modern Study Spaces</h3>
+                    </div>
+                  </div>
+                  
+                  <div className="grid md:grid-cols-2 gap-6 mt-6">
+                    <div className="space-y-3">
+                      <div className="aspect-video rounded-lg overflow-hidden">
+                        <img 
+                          src={studentsWalking} 
+                          alt="International students walking through scenic Canadian campus with fall foliage" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <h3 className="font-semibold text-center">Safe & Welcoming Environment</h3>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="aspect-video rounded-lg overflow-hidden">
+                        <img 
+                          src={residence} 
+                          alt="Modern and comfortable student residence room at Canadian university" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <h3 className="font-semibold text-center">Comfortable Student Housing</h3>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
