@@ -3,6 +3,14 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { GraduationCap, DollarSign, Clock, Globe, BookOpen, Award } from "lucide-react";
+import intiFacade from "@/assets/malaysia/inti-full-facade.webp";
+import medicalSurgery from "@/assets/malaysia/medical-surgery.webp";
+import biomedicalStudents from "@/assets/malaysia/biomedical-students.webp";
+import businessMeeting from "@/assets/malaysia/business-meeting.webp";
+import engineeringLab from "@/assets/malaysia/engineering-lab.webp";
+import sportsFacilities from "@/assets/malaysia/sports-facilities.webp";
+import dentalClinic from "@/assets/malaysia/dental-clinic.webp";
+import campusStudy from "@/assets/malaysia/campus-study.webp";
 
 const Malaysia = () => {
   return (
@@ -11,15 +19,24 @@ const Malaysia = () => {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/10 via-background to-background py-20">
+        <section className="relative bg-gradient-to-br from-primary/10 via-background to-background py-20">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Study in Malaysia — High Quality, Lower Cost
-              </h1>
-              <p className="text-xl text-muted-foreground">
-                English-taught programs, modern campuses, and international degrees at 70% lower cost.
-              </p>
+            <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                  Study in Malaysia — High Quality, Lower Cost
+                </h1>
+                <p className="text-xl text-muted-foreground mb-6">
+                  English-taught programs, modern campuses, and international degrees at 70% lower cost.
+                </p>
+              </div>
+              <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
+                <img 
+                  src={intiFacade} 
+                  alt="Modern Malaysian university campus - INTI International University with world-class facilities" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -113,6 +130,70 @@ const Malaysia = () => {
                       <p className="text-sm text-muted-foreground">
                         Study part of your degree in Malaysia, complete it in the partner country
                       </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Campus Life & Facilities */}
+              <Card className="border-border">
+                <CardContent className="pt-6">
+                  <h2 className="text-2xl font-bold mb-6 text-center">
+                    World-Class Campuses & Student Life
+                  </h2>
+                  <div className="grid md:grid-cols-3 gap-6">
+                    <div className="space-y-3">
+                      <div className="aspect-square rounded-lg overflow-hidden">
+                        <img 
+                          src={medicalSurgery} 
+                          alt="Medical students in modern surgery training facility in Malaysia" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <h3 className="font-semibold text-center">State-of-the-Art Medical Facilities</h3>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="aspect-square rounded-lg overflow-hidden">
+                        <img 
+                          src={engineeringLab} 
+                          alt="Engineering students working on practical projects in Malaysian university lab" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <h3 className="font-semibold text-center">Advanced Engineering Labs</h3>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="aspect-square rounded-lg overflow-hidden">
+                        <img 
+                          src={sportsFacilities} 
+                          alt="Modern sports facilities and recreational areas at Malaysian universities" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <h3 className="font-semibold text-center">World-Class Sports Facilities</h3>
+                    </div>
+                  </div>
+                  
+                  <div className="grid md:grid-cols-2 gap-6 mt-6">
+                    <div className="space-y-3">
+                      <div className="aspect-video rounded-lg overflow-hidden">
+                        <img 
+                          src={biomedicalStudents} 
+                          alt="International students collaborating on biomedical studies in Malaysia" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <h3 className="font-semibold text-center">Hands-On Learning Experience</h3>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="aspect-video rounded-lg overflow-hidden">
+                        <img 
+                          src={campusStudy} 
+                          alt="Diverse student community studying together on modern Malaysian campus" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <h3 className="font-semibold text-center">Vibrant Campus Community</h3>
                     </div>
                   </div>
                 </CardContent>
