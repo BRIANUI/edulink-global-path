@@ -2,7 +2,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { GraduationCap, DollarSign, Clock, Globe, BookOpen, Award } from "lucide-react";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { GraduationCap, DollarSign, Clock, Globe, BookOpen, Award, Play } from "lucide-react";
 import intiFacade from "@/assets/malaysia/inti-full-facade.webp";
 import medicalSurgery from "@/assets/malaysia/medical-surgery.webp";
 import biomedicalStudents from "@/assets/malaysia/biomedical-students.webp";
@@ -218,6 +219,59 @@ const Malaysia = () => {
                     <div className="flex justify-between items-center">
                       <span className="font-medium">Master's Programs</span>
                       <span className="text-muted-foreground">MYR 30,000 – 70,000 / year</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Student Life Videos */}
+              <Card className="border-border">
+                <CardContent className="pt-6">
+                  <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                    <Play className="h-6 w-6 text-primary" />
+                    Experience Student Life in Malaysia
+                  </h2>
+                  <div className="space-y-8">
+                    {/* Video 1 */}
+                    <div>
+                      <h3 className="font-semibold mb-3">Campus Life at University of Nottingham Malaysia</h3>
+                      <AspectRatio ratio={16 / 9}>
+                        <iframe
+                          className="w-full h-full rounded-lg"
+                          src="https://www.youtube.com/embed/Zsb7dizFRFs"
+                          title="Campus Life at University of Nottingham Malaysia"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        />
+                      </AspectRatio>
+                    </div>
+
+                    {/* Video 2 */}
+                    <div>
+                      <h3 className="font-semibold mb-3">Life as a Taylorian - Sanah Kassam, EduLink Student</h3>
+                      <AspectRatio ratio={16 / 9}>
+                        <iframe
+                          className="w-full h-full rounded-lg"
+                          src="https://www.youtube.com/embed/BIW9Y7Ol-G4"
+                          title="Life as a Taylorian - EduLink Student Sanah Kassam"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        />
+                      </AspectRatio>
+                    </div>
+
+                    {/* Video 3 */}
+                    <div>
+                      <h3 className="font-semibold mb-3">Taylor's University - EduLink Student Ali Interviews Students</h3>
+                      <AspectRatio ratio={16 / 9}>
+                        <iframe
+                          className="w-full h-full rounded-lg"
+                          src="https://www.youtube.com/embed/SYuhimEx8wA"
+                          title="Taylor's University - EduLink Student Ali Interviewing Students"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        />
+                      </AspectRatio>
                     </div>
                   </div>
                 </CardContent>
