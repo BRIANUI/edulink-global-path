@@ -32,7 +32,7 @@ const Hero = () => {
           alt="Students studying abroad"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/60 to-background/40" />
       </div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
