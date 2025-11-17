@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { GraduationCap, DollarSign, Briefcase, Globe, BookOpen, MapPin, Users } from "lucide-react";
 import campusEvening from "@/assets/canada/campus-evening.webp";
 import studentsWalking from "@/assets/canada/students-walking.webp";
@@ -290,6 +291,222 @@ const Canada = () => {
                       <p className="text-sm font-medium text-foreground">
                         We provide full financial documentation guidance to ensure your visa application meets all requirements.
                       </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* FAQ Section */}
+              <Card className="border-border">
+                <CardContent className="pt-6">
+                  <h2 className="text-3xl font-bold mb-6 text-center">
+                    Frequently Asked Questions
+                  </h2>
+                  <p className="text-center text-muted-foreground mb-8">
+                    Everything you need to know about studying in Canada
+                  </p>
+                  
+                  <Accordion type="single" collapsible className="w-full space-y-2">
+                    {/* General Questions */}
+                    <AccordionItem value="item-1" className="border border-border rounded-lg px-4">
+                      <AccordionTrigger className="hover:no-underline">
+                        <span className="font-semibold text-left">What does EduLink Worldwide charge for services?</span>
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground">
+                        Absolutely nothing! All our services are 100% free of charge. We don't charge processing fees, administrative fees, or any other hidden costs.
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="item-2" className="border border-border rounded-lg px-4">
+                      <AccordionTrigger className="hover:no-underline">
+                        <span className="font-semibold text-left">How long does the entire application process take?</span>
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground">
+                        The complete process typically takes around 3 weeks to 3 months from application submission to visa approval. However, this can vary depending on the institution, program, and time of year. Some applications and/or visas may be processed faster, while others might take slightly longer.
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="item-3" className="border border-border rounded-lg px-4">
+                      <AccordionTrigger className="hover:no-underline">
+                        <span className="font-semibold text-left">What intakes are available?</span>
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground">
+                        <p className="mb-2">Canada offers multiple intakes throughout the year:</p>
+                        <ul className="list-disc list-inside space-y-1 ml-2">
+                          <li>Fall Intake (September/October)</li>
+                          <li>Winter Intake (January/February)</li>
+                          <li>Spring/Summer Intake (May/June)</li>
+                        </ul>
+                        <p className="mt-2">Availability varies by institution and program.</p>
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="item-4" className="border border-border rounded-lg px-4">
+                      <AccordionTrigger className="hover:no-underline">
+                        <span className="font-semibold text-left">Do you support visa applications other than study permits?</span>
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground">
+                        NO, we specialize exclusively on student related services for Canada. This focused approach allows us to maintain our industry-leading 99% approval rate and provide expert guidance. For Canada: we work with an authorized and licensed professional Canadian Visa immigration consultant, ensuring higher success rates.
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    {/* Program & Academic Questions */}
+                    <AccordionItem value="item-5" className="border border-border rounded-lg px-4">
+                      <AccordionTrigger className="hover:no-underline">
+                        <span className="font-semibold text-left">What levels of study do you support?</span>
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground">
+                        <p className="mb-2">For Canada:</p>
+                        <ul className="list-disc list-inside space-y-1 ml-2">
+                          <li>High School programs</li>
+                          <li>Diploma programs</li>
+                          <li>Bachelor's degree programs</li>
+                          <li>Post graduate programs</li>
+                          <li>Master's degree programs</li>
+                        </ul>
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="item-6" className="border border-border rounded-lg px-4">
+                      <AccordionTrigger className="hover:no-underline">
+                        <span className="font-semibold text-left">Can I work while studying?</span>
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground">
+                        In Canada: Yes! International students can work up to 20 hours per week during academic sessions and full-time during scheduled breaks. After graduation, you may qualify for a Post-Graduate Work Permit (PGWP) for up to 3 years.
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    {/* Financial Questions */}
+                    <AccordionItem value="item-7" className="border border-border rounded-lg px-4">
+                      <AccordionTrigger className="hover:no-underline">
+                        <span className="font-semibold text-left">Do I need to show proof of financial capability?</span>
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground">
+                        Yes, for Canada. Financial proof is required for study permit applications: You need a bank statement showing approximately CAD $43,000 (approximately USD $31,700) that has been in your account for at least 4 months. These amounts cover tuition, living expenses, and other costs.
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="item-8" className="border border-border rounded-lg px-4">
+                      <AccordionTrigger className="hover:no-underline">
+                        <span className="font-semibold text-left">What are the typical tuition costs?</span>
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground">
+                        <ul className="space-y-2">
+                          <li><strong>Diploma programs:</strong> CAD $12,000 - $18,000 per year</li>
+                          <li><strong>Bachelor's programs:</strong> CAD $15,000 - $35,000 per year</li>
+                          <li><strong>Master's programs:</strong> CAD $18,000 - $40,000 per year</li>
+                        </ul>
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="item-9" className="border border-border rounded-lg px-4">
+                      <AccordionTrigger className="hover:no-underline">
+                        <span className="font-semibold text-left">What accommodation options are available?</span>
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground">
+                        <p className="mb-2">There are three main options:</p>
+                        <ol className="list-decimal list-inside space-y-1 ml-2">
+                          <li>On-Campus Residence: University/college dormitories with meal plans and amenities</li>
+                          <li>Homestay: Living with a Canadian family for cultural immersion</li>
+                          <li>Off-Campus Housing: Apartments or shared accommodations in the community</li>
+                        </ol>
+                        <p className="mt-2">We provide guidance on all options during pre-departure briefing.</p>
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    {/* Application Process */}
+                    <AccordionItem value="item-10" className="border border-border rounded-lg px-4">
+                      <AccordionTrigger className="hover:no-underline">
+                        <span className="font-semibold text-left">What documents do I need for application?</span>
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground">
+                        <p className="mb-2">Typical requirements include:</p>
+                        <ul className="list-disc list-inside space-y-1 ml-2">
+                          <li>Valid passport</li>
+                          <li>Academic transcripts and certificates</li>
+                          <li>English language proficiency test results (IELTS/TOEFL/Duolingo)</li>
+                          <li>Personal statement/Statement of Purpose</li>
+                          <li>Letters of recommendation</li>
+                          <li>CV/Resume</li>
+                          <li>Passport-size photographs</li>
+                          <li>Financial documents</li>
+                        </ul>
+                        <p className="mt-2">Our team will provide a detailed checklist based on your chosen institution.</p>
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="item-11" className="border border-border rounded-lg px-4">
+                      <AccordionTrigger className="hover:no-underline">
+                        <span className="font-semibold text-left">Do I need IELTS or TOEFL?</span>
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground">
+                        <p className="mb-2">Most institutions waive or do not require if your previous study was done in English.</p>
+                        <p className="mb-2">For those that do require English proficiency, accepted tests include:</p>
+                        <ul className="list-disc list-inside space-y-1 ml-2">
+                          <li>IELTS (typically 6.0-6.5 minimum)</li>
+                          <li>TOEFL</li>
+                          <li>Duolingo English Test</li>
+                          <li>PTE Academic</li>
+                        </ul>
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    {/* Visa Questions */}
+                    <AccordionItem value="item-12" className="border border-border rounded-lg px-4">
+                      <AccordionTrigger className="hover:no-underline">
+                        <span className="font-semibold text-left">Why is EduLink's visa success rate so high?</span>
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground">
+                        <p className="mb-2">Our 99% success rate comes from:</p>
+                        <ul className="list-disc list-inside space-y-1 ml-2">
+                          <li>Thorough document verification before submission</li>
+                          <li>Expert knowledge of visa requirements</li>
+                          <li>Personalized application review</li>
+                          <li>Strong relationships with licensed immigration professionals</li>
+                          <li>Comprehensive interview preparation</li>
+                          <li>15+ years of experience</li>
+                        </ul>
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="item-13" className="border border-border rounded-lg px-4">
+                      <AccordionTrigger className="hover:no-underline">
+                        <span className="font-semibold text-left">What happens if my visa is rejected?</span>
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground">
+                        <p className="mb-2">While rare with our support, if a visa is rejected, we:</p>
+                        <ul className="list-disc list-inside space-y-1 ml-2">
+                          <li>Analyze the rejection reasons</li>
+                          <li>Address any issues or deficiencies</li>
+                          <li>Prepare a stronger reapplication</li>
+                          <li>Provide continued support at no cost</li>
+                          <li>Consider alternative options if needed</li>
+                        </ul>
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="item-14" className="border border-border rounded-lg px-4">
+                      <AccordionTrigger className="hover:no-underline">
+                        <span className="font-semibold text-left">Can my family visit me while I study?</span>
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground">
+                        Yes! Family members can apply for visitor visas to visit you in Canada. We provide guidance on the process and required documentation.
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+
+                  <div className="mt-8 p-6 bg-primary/5 rounded-lg text-center">
+                    <h3 className="font-semibold text-lg mb-2">Still Have Questions?</h3>
+                    <p className="text-muted-foreground mb-4">
+                      Can't find the answer you're looking for? Our expert counselors are ready to help!
+                    </p>
+                    <div className="flex flex-wrap justify-center gap-4 text-sm">
+                      <div className="flex items-center gap-2">
+                        <span>📞 +254 731 367 057 / +254 704 595 341</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span>📧 info@edulinkmy.com</span>
+                      </div>
                     </div>
                   </div>
                 </CardContent>
