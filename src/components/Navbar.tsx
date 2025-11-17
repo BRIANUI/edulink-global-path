@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { NavLink } from "@/components/NavLink";
+import logo from "@/assets/logo.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,11 +12,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <NavLink to="/" className="flex items-center space-x-2">
-            <div className="flex items-center">
-              <span className="text-2xl font-bold text-primary">Edu</span>
-              <span className="text-2xl font-bold text-foreground">Link</span>
-            </div>
+          <NavLink to="/" className="flex items-center">
+            <img src={logo} alt="EduLink Logo" className="h-12 w-auto" />
           </NavLink>
 
           {/* Desktop Navigation */}
