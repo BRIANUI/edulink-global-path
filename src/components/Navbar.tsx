@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <NavLink to="/" className="flex items-center">
-            <img src={logo} alt="EduLink Logo" className="h-12 w-auto" />
+            <img src={logo} alt="EduLink Logo" className="h-16 w-auto" />
           </NavLink>
 
           {/* Desktop Navigation */}
