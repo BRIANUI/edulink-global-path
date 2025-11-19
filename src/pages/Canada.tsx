@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { GraduationCap, DollarSign, Briefcase, Globe, BookOpen, MapPin, Users } from "lucide-react";
-import campusEvening from "@/assets/canada/campus-evening.webp";
+import heroImage from "@/assets/canada-hero.jpg";
 import studentsWalking from "@/assets/canada/students-walking.webp";
 import schoolSpirit from "@/assets/canada/school-spirit.webp";
 import residence from "@/assets/canada/residence.webp";
@@ -20,21 +20,21 @@ const Canada = () => {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-primary/10 via-background to-background py-20">
+        <section className="relative bg-gradient-to-br from-primary/10 via-background to-background py-20 overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-              <div>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <div className="animate-fade-up">
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                   Study in Canada — Global Opportunities & Work Experience
                 </h1>
                 <p className="text-xl text-muted-foreground mb-6">
                   Top-ranked universities, multicultural campuses, Co-op programs, and PGWP up to 3 years.
                 </p>
               </div>
-              <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
+              <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl animate-scale-in hover:shadow-[var(--shadow-glow)] transition-all duration-300 hover:scale-105">
                 <img 
-                  src={campusEvening} 
-                  alt="Canadian university campus at sunset with diverse international students" 
+                  src={heroImage} 
+                  alt="African students studying at Canadian university library" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -54,23 +54,23 @@ const Canada = () => {
 
               {/* Quick Facts */}
               <div className="grid md:grid-cols-3 gap-6 py-8">
-                <Card className="border-border">
+                <Card className="border-border hover:shadow-[var(--shadow-elegant)] transition-all duration-300 hover:-translate-y-1 animate-fade-in">
                   <CardContent className="pt-6 text-center">
-                    <Briefcase className="h-10 w-10 text-primary mx-auto mb-3" />
+                    <Briefcase className="h-10 w-10 text-primary mx-auto mb-3 animate-bounce-in" />
                     <h3 className="font-semibold mb-2">Work While You Study</h3>
                     <p className="text-sm text-muted-foreground">Part-time during term, full-time during breaks</p>
                   </CardContent>
                 </Card>
-                <Card className="border-border">
+                <Card className="border-border hover:shadow-[var(--shadow-elegant)] transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{ animationDelay: "0.1s" }}>
                   <CardContent className="pt-6 text-center">
-                    <MapPin className="h-10 w-10 text-primary mx-auto mb-3" />
+                    <MapPin className="h-10 w-10 text-primary mx-auto mb-3 animate-bounce-in" style={{ animationDelay: "0.1s" }} />
                     <h3 className="font-semibold mb-2">PGWP Available</h3>
                     <p className="text-sm text-muted-foreground">Work permit up to 3 years after graduation</p>
                   </CardContent>
                 </Card>
-                <Card className="border-border">
+                <Card className="border-border hover:shadow-[var(--shadow-elegant)] transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{ animationDelay: "0.2s" }}>
                   <CardContent className="pt-6 text-center">
-                    <Globe className="h-10 w-10 text-primary mx-auto mb-3" />
+                    <Globe className="h-10 w-10 text-primary mx-auto mb-3 animate-bounce-in" style={{ animationDelay: "0.2s" }} />
                     <h3 className="font-semibold mb-2">PR Pathway</h3>
                     <p className="text-sm text-muted-foreground">Most reliable path to permanent residency</p>
                   </CardContent>

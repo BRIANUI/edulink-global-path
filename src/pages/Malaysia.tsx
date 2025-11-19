@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { GraduationCap, DollarSign, Clock, Globe, BookOpen, Award, Play } from "lucide-react";
-import intiFacade from "@/assets/malaysia/inti-full-facade.webp";
+import heroImage from "@/assets/malaysia-hero.jpg";
 import medicalSurgery from "@/assets/malaysia/medical-surgery.webp";
 import biomedicalStudents from "@/assets/malaysia/biomedical-students.webp";
 import businessMeeting from "@/assets/malaysia/business-meeting.webp";
@@ -21,21 +21,21 @@ const Malaysia = () => {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-primary/10 via-background to-background py-20">
+        <section className="relative bg-gradient-to-br from-primary/10 via-background to-background py-20 overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-              <div>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <div className="animate-fade-up">
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                   Study in Malaysia — High Quality, Lower Cost
                 </h1>
                 <p className="text-xl text-muted-foreground mb-6">
                   English-taught programs, modern campuses, and international degrees at 70% lower cost.
                 </p>
               </div>
-              <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
+              <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl animate-scale-in hover:shadow-[var(--shadow-glow)] transition-all duration-300 hover:scale-105">
                 <img 
-                  src={intiFacade} 
-                  alt="Modern Malaysian university campus - INTI International University with world-class facilities" 
+                  src={heroImage} 
+                  alt="International students at tropical Malaysian university campus" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -55,23 +55,23 @@ const Malaysia = () => {
 
               {/* Quick Facts */}
               <div className="grid md:grid-cols-3 gap-6 py-8">
-                <Card className="border-border">
+                <Card className="border-border hover:shadow-[var(--shadow-elegant)] transition-all duration-300 hover:-translate-y-1 animate-fade-in">
                   <CardContent className="pt-6 text-center">
-                    <Clock className="h-10 w-10 text-primary mx-auto mb-3" />
+                    <Clock className="h-10 w-10 text-primary mx-auto mb-3 animate-bounce-in" />
                     <h3 className="font-semibold mb-2">Visa Timeline</h3>
                     <p className="text-sm text-muted-foreground">3 weeks to 1.5 months with correct documentation</p>
                   </CardContent>
                 </Card>
-                <Card className="border-border">
+                <Card className="border-border hover:shadow-[var(--shadow-elegant)] transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{ animationDelay: "0.1s" }}>
                   <CardContent className="pt-6 text-center">
-                    <DollarSign className="h-10 w-10 text-primary mx-auto mb-3" />
+                    <DollarSign className="h-10 w-10 text-primary mx-auto mb-3 animate-bounce-in" style={{ animationDelay: "0.1s" }} />
                     <h3 className="font-semibold mb-2">Affordable Tuition</h3>
                     <p className="text-sm text-muted-foreground">70% lower than Western countries</p>
                   </CardContent>
                 </Card>
-                <Card className="border-border">
+                <Card className="border-border hover:shadow-[var(--shadow-elegant)] transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{ animationDelay: "0.2s" }}>
                   <CardContent className="pt-6 text-center">
-                    <Globe className="h-10 w-10 text-primary mx-auto mb-3" />
+                    <Globe className="h-10 w-10 text-primary mx-auto mb-3 animate-bounce-in" style={{ animationDelay: "0.2s" }} />
                     <h3 className="font-semibold mb-2">English Taught</h3>
                     <p className="text-sm text-muted-foreground">All programs delivered in English</p>
                   </CardContent>

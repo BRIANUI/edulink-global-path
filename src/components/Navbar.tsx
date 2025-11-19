@@ -47,13 +47,6 @@ const Navbar = () => {
               Canada
             </NavLink>
             <NavLink
-              to="/comparison"
-              className="text-foreground hover:text-primary transition-colors font-medium"
-              activeClassName="text-primary"
-            >
-              Compare
-            </NavLink>
-            <NavLink
               to="/about"
               className="text-foreground hover:text-primary transition-colors font-medium"
               activeClassName="text-primary"
@@ -130,13 +123,6 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               Canada
-            </NavLink>
-            <NavLink
-              to="/comparison"
-              className="block py-2 text-foreground hover:text-primary transition-colors font-medium"
-              onClick={() => setIsOpen(false)}
-            >
-              Compare
             </NavLink>
             <NavLink
               to="/about"

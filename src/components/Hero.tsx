@@ -4,7 +4,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useState } from "react";
 import { toast } from "sonner";
 import { MessageCircle, CheckCircle2 } from "lucide-react";
-import heroImage from "@/assets/hero-students.jpg";
+import heroImage from "@/assets/hero-campus.jpg";
 
 const Hero = () => {
   const [formData, setFormData] = useState({
@@ -38,7 +38,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 animate-fade-up">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Your Gateway to World-Class Education in <span className="text-primary">Canada</span> & <span className="text-primary">Malaysia</span>
@@ -70,21 +70,12 @@ const Hero = () => {
               >
                 Get a Free 3-Minute Review
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                asChild
-              >
-                <a href="/comparison">
-                  Compare Malaysia vs Canada →
-                </a>
-              </Button>
             </div>
           </div>
 
           {/* Right Form */}
-          <div className="lg:ml-auto w-full max-w-md">
-            <div className="bg-card border border-border rounded-2xl p-8 shadow-2xl">
+          <div className="lg:ml-auto w-full max-w-md animate-fade-in">
+            <div className="bg-card border border-border rounded-2xl p-8 shadow-2xl hover:shadow-[var(--shadow-glow)] transition-shadow duration-300">
               <h3 className="text-2xl font-bold mb-2">Start Your Journey Today</h3>
               <p className="text-muted-foreground mb-6">Request a free 3-minute review</p>
               
