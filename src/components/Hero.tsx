@@ -25,6 +25,9 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      {/* Animated Gradient Background */}
+      <div className="absolute inset-0 z-0 animated-gradient opacity-20"></div>
+      
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -32,19 +35,24 @@ const Hero = () => {
           alt="Students studying abroad"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/60 to-background/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/70 to-background/50" />
       </div>
+      
+      {/* Decorative Blobs */}
+      <div className="absolute top-20 left-20 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }}></div>
+      <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }}></div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 animate-fade-up">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Your Gateway to World-Class Education in <span className="text-primary">Canada</span> & <span className="text-primary">Malaysia</span>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight">
+                Your Gateway to <span className="gradient-text">World-Class Education</span> in <span className="gradient-text-accent">Canada</span> & <span className="gradient-text-success">Malaysia</span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground">
-                Free, end-to-end study-abroad guidance for African students. 15+ years of experience, 1,000+ students placed, and a 99% visa success rate.
+              <p className="text-xl md:text-2xl text-muted-foreground font-medium">
+                <span className="text-primary font-bold">Free, end-to-end</span> study-abroad guidance for African students. <span className="text-success font-bold">15+ years</span> of experience, <span className="text-accent font-bold">1,000+</span> students placed, and a <span className="text-warning font-bold">99% visa</span> success rate.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <div className="flex items-center gap-2">
@@ -65,19 +73,28 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4">
               <Button
                 size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground"
+                variant="glow"
+                className="text-lg"
                 onClick={() => document.getElementById("inquiry-form")?.scrollIntoView({ behavior: "smooth" })}
               >
-                Get a Free 3-Minute Review
+                Get a Free 3-Minute Review ✨
+              </Button>
+              <Button
+                size="lg"
+                variant="glass"
+                className="text-lg"
+                asChild
+              >
+                <a href="/contact">Contact Us</a>
               </Button>
             </div>
           </div>
 
           {/* Right Form */}
           <div className="lg:ml-auto w-full max-w-md animate-fade-in">
-            <div className="bg-card border border-border rounded-2xl p-8 shadow-2xl hover:shadow-[var(--shadow-glow)] transition-shadow duration-300">
-              <h3 className="text-2xl font-bold mb-2">Start Your Journey Today</h3>
-              <p className="text-muted-foreground mb-6">Request a free 3-minute review</p>
+            <div className="glass-card rounded-2xl p-8 shadow-2xl hover:shadow-[var(--shadow-colorful)] transition-all duration-300 hover:scale-105 border-l-4 border-primary">
+              <h3 className="text-3xl font-black mb-2 gradient-text">Start Your Journey Today</h3>
+              <p className="text-muted-foreground mb-6 font-medium">Request a free 3-minute review ⚡</p>
               
               <form onSubmit={handleSubmit} className="space-y-4" id="inquiry-form">
                 <div>
@@ -127,8 +144,13 @@ const Hero = () => {
                   </Select>
                 </div>
                 
-                <Button type="submit" className="w-full h-12 bg-success hover:bg-success/90">
-                  Get Free Consultation
+                <Button 
+                  type="submit" 
+                  variant="glow"
+                  size="lg"
+                  className="w-full"
+                >
+                  Get Free Consultation 🚀
                 </Button>
               </form>
               

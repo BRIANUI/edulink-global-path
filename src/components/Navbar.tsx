@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
+    <nav className="sticky top-0 z-50 glass-card border-b border-border/50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -74,12 +74,13 @@ const Navbar = () => {
             <div className="flex flex-col items-end mr-2">
               <Button
                 size="sm"
-                className="bg-accent hover:bg-accent/90"
+                variant="glow"
+                className="animate-pulse-glow"
                 onClick={() => window.open("https://wa.me/254731367057?text=Hi%20EduLink%2C%20I%27m%20interested%20in%20studying%20abroad.", "_blank")}
               >
-                Get a Free 3-Minute Review
+                Get a Free 3-Minute Review ✨
               </Button>
-              <span className="text-xs text-muted-foreground mt-1">All services are 100% FREE — no hidden fees.</span>
+              <span className="text-xs text-muted-foreground mt-1 font-medium">All services are <span className="text-success font-bold">100% FREE</span> — no hidden fees.</span>
             </div>
           </div>
 

@@ -24,10 +24,12 @@ export default {
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
+          vibrant: "hsl(var(--primary-vibrant))",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
+          vibrant: "hsl(var(--secondary-vibrant))",
           foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {
@@ -40,11 +42,17 @@ export default {
         },
         accent: {
           DEFAULT: "hsl(var(--accent))",
+          vibrant: "hsl(var(--accent-vibrant))",
           foreground: "hsl(var(--accent-foreground))",
         },
         success: {
           DEFAULT: "hsl(var(--success))",
+          vibrant: "hsl(var(--success-vibrant))",
           foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -64,6 +72,15 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-hero-alt': 'var(--gradient-hero-alt)',
+        'gradient-cta': 'var(--gradient-cta)',
+        'gradient-success': 'var(--gradient-success)',
+        'gradient-card': 'var(--gradient-card)',
+        'gradient-purple': 'var(--gradient-purple)',
+        'gradient-rainbow': 'var(--gradient-rainbow)',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -175,6 +192,26 @@ export default {
             boxShadow: "0 0 20px 10px hsl(var(--primary) / 0)",
           },
         },
+        "shimmer": {
+          "0%": {
+            backgroundPosition: "-200% center",
+          },
+          "100%": {
+            backgroundPosition: "200% center",
+          },
+        },
+        "glow": {
+          "0%, 100%": {
+            boxShadow: "0 0 20px hsl(var(--primary) / 0.5)",
+          },
+          "50%": {
+            boxShadow: "0 0 40px hsl(var(--primary) / 0.8)",
+          },
+        },
+        "wiggle": {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -187,6 +224,9 @@ export default {
         "bounce-in": "bounce-in 0.6s ease-out",
         "float": "float 3s ease-in-out infinite",
         "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+        "shimmer": "shimmer 3s linear infinite",
+        "glow": "glow 2s ease-in-out infinite",
+        "wiggle": "wiggle 1s ease-in-out infinite",
       },
     },
   },
