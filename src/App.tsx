@@ -11,7 +11,6 @@ import Contact from "./pages/Contact";
 import Malaysia from "./pages/Malaysia";
 import Canada from "./pages/Canada";
 import FAQ from "./pages/FAQ";
-import Comparison from "./pages/Comparison";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,7 +26,6 @@ const App = () => (
           <Route path="/programs" element={<Programs />} />
           <Route path="/malaysia" element={<Malaysia />} />
           <Route path="/canada" element={<Canada />} />
-          <Route path="/comparison" element={<Comparison />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/faq" element={<FAQ />} />
